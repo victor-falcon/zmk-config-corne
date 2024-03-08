@@ -73,19 +73,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q        &lt 4 W      &kp E              &kp R         &kp T          &kp Y        &kp U            &kp I          &lt 4 O      &kp P                     &lt 5 GLOBE
-&none  &hml LALT A  &hml LGUI S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G          &kp H        &hmr RCTRL J     &hmr RSHIFT K  &hmr LGUI L  &hmr RIGHT_ALT SEMICOLON  &kp LA(E)
-&none  &kp Z        &kp X        &kp C              &kp V         &kp B          &kp N        &kp M            &kp COMMA      &kp DOT      &kp FSLH                  &none
-                                 &kp TAB            &lt 2 ESCAPE  &lt 1 ENTER    &lt 3 SPACE  &lt 2 BACKSPACE  &kp DEL
+&none  &kp Q        &lt 4 W      &kp E              &kp R         &kp T        &kp Y            &kp U         &kp I          &lt 4 O      &kp P                     &lt 5 GLOBE
+&none  &hml LALT A  &hml LGUI S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G        &kp H            &hmr RCTRL J  &hmr RSHIFT K  &hmr LGUI L  &hmr RIGHT_ALT SEMICOLON  &kp LA(E)
+&none  &kp Z        &kp X        &kp C              &kp V         &kp B        &kp N            &kp M         &kp COMMA      &kp DOT      &kp FSLH                  &none
+                                 &kp TAB            &lt 1 ENTER   &lt 2 ESC    &lt 2 BACKSPACE  &lt 3 SPACE   &kp DEL
             >;
         };
 
         arrows {
             bindings = <
-&trans  &kp LG(Q)     &kp LG(W)     &kp LA(LG(LEFT))  &kp LA(LG(RIGHT))  &trans    &kp HOME      &kp PG_DN  &kp PG_UP  &kp END       &kp LG(PLUS)   &trans
-&trans  &kp LALT      &kp LGUI      &kp LSHFT         &kp LCTRL          &trans    &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT     &kp LG(N0)     &trans
-&trans  &kp LC(DOWN)  &kp LC(LEFT)  &kp LC(UP)        &kp LC(RIGHT)      &trans    &kp LG(LBKT)  &trans     &trans     &kp LG(RBKT)  &kp LG(MINUS)  &trans
-                                    &kp TAB           &kp ESC            &trans    &kp SPACE     &kp BSPC   &kp DEL
+&trans  &kp LG(Q)     &kp LG(W)     &kp LA(LG(LEFT))  &kp LA(LG(RIGHT))  &trans    &kp HOME       &kp PG_DN  &kp PG_UP  &kp END       &kp LG(PLUS)   &trans
+&trans  &kp LALT      &kp LGUI      &kp LSHFT         &kp LCTRL          &trans    &kp LEFT       &kp DOWN   &kp UP     &kp RIGHT     &kp LG(N0)     &trans
+&trans  &kp LC(DOWN)  &kp LC(LEFT)  &kp LC(UP)        &kp LC(RIGHT)      &trans    &kp LG(LBKT)   &trans     &trans     &kp LG(RBKT)  &kp LG(MINUS)  &trans
+                                    &kp TAB           &kp ESC            &trans    &kp BACKSPACE  &kp SPACE  &kp DEL
             >;
         };
 
@@ -97,10 +97,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp F1            &kp F2            &kp F3              &kp F4         &kp K_PLAY_PAUSE     &kp FSLH   &kp N7                &kp N8              &kp N9            &kp MINUS           &trans
-&trans  &hml LEFT_ALT F5  &hml LEFT_GUI F6  &hml LEFT_SHIFT F7  &hml LCTRL F8  &kp C_VOLUME_DOWN    &kp STAR   &hmr LEFT_CONTROL N4  &hmr LEFT_SHIFT N5  &hmr LEFT_GUI N6  &hmr LEFT_ALT PLUS  &trans
-&trans  &kp F9            &kp F10           &kp F11             &kp F12        &kp C_VOLUME_UP      &kp DOT    &kp N1                &kp N2              &kp N3            &kp FSLH            &trans
-                                            &kp TAB             &trans         &kp RET              &kp SPACE  &kp N0                &kp COMMA
+&trans  &kp F1            &kp F2            &kp F3              &kp F4         &kp K_PLAY_PAUSE     &kp FSLH       &kp N7                &kp N8              &kp N9            &kp MINUS           &trans
+&trans  &hml LEFT_ALT F5  &hml LEFT_GUI F6  &hml LEFT_SHIFT F7  &hml LCTRL F8  &kp C_VOLUME_DOWN    &kp STAR       &hmr LEFT_CONTROL N4  &hmr LEFT_SHIFT N5  &hmr LEFT_GUI N6  &hmr LEFT_ALT PLUS  &trans
+&trans  &kp F9            &kp F10           &kp F11             &kp F12        &kp C_VOLUME_UP      &kp DOT        &kp N1                &kp N2              &kp N3            &kp FSLH            &trans
+                                            &kp TAB             &trans         &kp ESCAPE           &kp BACKSPACE  &kp N0                &kp COMMA
             >;
         };
 
@@ -112,10 +112,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LS(EXCL)   &kp LS(AT)         &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)  &kp LS(CARET)    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &trans
-&kp LS(TILDE)  &kp GRAVE          &kp SQT        &kp LS(LBRC)   &kp LS(RBRC)   &trans           &kp LS(PIPE)   &kp MINUS      &kp EQUAL     &kp LBKT      &kp RBKT      &trans
-&trans         &kp LA(LS(SLASH))  &kp LA(N1)     &php_equalize  &php_arrow     &trans           &kp LA(N)      &kp LS(UNDER)  &kp LS(PLUS)  &kp DOT       &kp BSLH      &trans
-                                                 &kp TAB        &kp ESC        &kp RET          &trans         &kp BSPC       &kp DEL
+&kp LS(EXCL)   &kp LS(AT)         &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)  &kp LS(CARET)    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)            &kp LS(LPAR)  &kp LS(RPAR)  &kp BACKSPACE
+&kp LS(TILDE)  &kp GRAVE          &kp SQT        &kp LS(LBRC)   &kp LS(RBRC)   &trans           &kp LS(PIPE)   &kp MINUS      &hmr RIGHT_SHIFT EQUAL  &kp LBKT      &kp RBKT      &trans
+&trans         &kp LA(LS(SLASH))  &kp LA(N1)     &php_equalize  &php_arrow     &trans           &kp LA(N)      &kp LS(UNDER)  &kp LS(PLUS)            &kp DOT       &kp BSLH      &trans
+                                                 &kp TAB        &kp ENTER      &kp ESCAPE       &trans         &kp SPACE      &kp DEL
             >;
         };
 
