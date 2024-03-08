@@ -11,7 +11,7 @@
     combos {
         compatible = "zmk,combos";
 
-        bloq_may {
+        combo_bloq_may {
             bindings = <&caps_word>;
             key-positions = <15 20>;
             layers = <0>;
