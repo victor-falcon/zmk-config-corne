@@ -73,23 +73,23 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q        &lt 4 W      &kp E              &kp R         &kp T        &kp Y            &kp U         &kp I          &lt 4 O      &kp P                     &lt 5 GLOBE
-&none  &hml LALT A  &hml LGUI S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G        &kp H            &hmr RCTRL J  &hmr RSHIFT K  &hmr LGUI L  &hmr RIGHT_ALT SEMICOLON  &kp LA(E)
-&none  &kp Z        &kp X        &kp C              &kp V         &kp B        &kp N            &kp M         &kp COMMA      &kp DOT      &kp FSLH                  &none
-                                 &kp TAB            &lt 1 ENTER   &lt 2 ESC    &lt 2 BACKSPACE  &lt 3 SPACE   &kp DEL
+&none  &kp Q        &lt 5 W      &kp E              &kp R         &kp T          &kp Y        &kp U            &kp I          &lt 5 O      &kp P                     &lt 6 GLOBE
+&none  &hml LALT A  &hml LGUI S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G          &kp H        &hmr RCTRL J     &hmr RSHIFT K  &hmr LGUI L  &hmr RIGHT_ALT SEMICOLON  &kp LA(E)
+&none  &kp Z        &kp X        &kp C              &kp V         &kp B          &kp N        &kp M            &kp COMMA      &kp DOT      &kp FSLH                  &none
+                                 &kp TAB            &lt 1 ESCAPE  &lt 2 ENTER    &lt 3 SPACE  &lt 4 BACKSPACE  &kp DEL
             >;
         };
 
         arrows {
             bindings = <
-&trans  &kp LG(Q)     &kp LG(W)     &kp LA(LG(LEFT))  &kp LA(LG(RIGHT))  &trans    &kp HOME       &kp PG_DN  &kp PG_UP  &kp END       &kp LG(PLUS)   &trans
-&trans  &kp LALT      &kp LGUI      &kp LSHFT         &kp LCTRL          &trans    &kp LEFT       &kp DOWN   &kp UP     &kp RIGHT     &kp LG(N0)     &trans
-&trans  &kp LC(DOWN)  &kp LC(LEFT)  &kp LC(UP)        &kp LC(RIGHT)      &trans    &kp LG(LBKT)   &trans     &trans     &kp LG(RBKT)  &kp LG(MINUS)  &trans
-                                    &kp TAB           &kp ESC            &trans    &kp BACKSPACE  &kp SPACE  &kp DEL
+&trans  &kp LG(Q)     &kp LG(W)     &kp LA(LG(LEFT))  &kp LA(LG(RIGHT))  &trans       &kp HOME      &kp PG_DN      &kp PG_UP  &kp END       &kp LG(PLUS)   &trans
+&trans  &kp LALT      &kp LGUI      &kp LSHFT         &kp LCTRL          &trans       &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT     &kp LG(N0)     &trans
+&trans  &kp LC(DOWN)  &kp LC(LEFT)  &kp LC(UP)        &kp LC(RIGHT)      &trans       &kp LG(LBKT)  &trans         &trans     &kp LG(RBKT)  &kp LG(MINUS)  &trans
+                                    &kp TAB           &trans             &kp ENTER    &kp SPACE     &kp BACKSPACE  &kp DEL
             >;
         };
 
-        lower_layer {
+        numbers {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -97,10 +97,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp F1            &kp F2            &kp F3              &kp F4         &kp K_PLAY_PAUSE     &kp FSLH       &kp N7                &kp N8              &kp N9            &kp MINUS           &trans
-&trans  &hml LEFT_ALT F5  &hml LEFT_GUI F6  &hml LEFT_SHIFT F7  &hml LCTRL F8  &kp C_VOLUME_DOWN    &kp STAR       &hmr LEFT_CONTROL N4  &hmr LEFT_SHIFT N5  &hmr LEFT_GUI N6  &hmr LEFT_ALT PLUS  &trans
-&trans  &kp F9            &kp F10           &kp F11             &kp F12        &kp C_VOLUME_UP      &kp DOT        &kp N1                &kp N2              &kp N3            &kp FSLH            &trans
-                                            &kp TAB             &trans         &kp ESCAPE           &kp BACKSPACE  &kp N0                &kp COMMA
+&trans  &none  &none  &none    &none          &none     &none    &kp N7                &kp N8              &kp N9            &kp PLUS  &kp MINUS
+&trans  &none  &none  &none    &kp BACKSPACE  &none     &none    &hmr LEFT_CONTROL N4  &hmr LEFT_SHIFT N5  &hmr LEFT_GUI N6  &none     &trans
+&trans  &none  &none  &none    &none          &none     &none    &kp N1                &kp N2              &kp N3            &kp FSLH  &kp ASTERISK
+                      &kp TAB  &kp ESC        &trans    &kp DOT  &kp N0                &kp COMMA
+            >;
+        };
+
+        functions {
+            bindings = <
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp C_PLAY_PAUSE    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp C_VOLUME_UP     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOL_DN        &trans  &trans  &trans  &trans  &trans  &trans
+                         &none    &none    &none               &none   &none   &none
             >;
         };
 
@@ -112,10 +121,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LS(LA(N8))  &kp EXCLAMATION    &kp AT_SIGN  &kp HASH       &kp DOLLAR    &kp PERCENT             &kp CARET      &kp AMPERSAND  &kp ASTERISK            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
-&kp LS(TILDE)   &kp GRAVE          &kp SQT      &kp LS(LBRC)   &kp LS(RBRC)  &kp LS(LA(NUMBER_2))    &kp PIPE       &kp MINUS      &hmr RIGHT_SHIFT EQUAL  &kp LBKT              &kp RBKT               &trans
-&trans          &kp LA(LS(SLASH))  &kp LA(N1)   &php_equalize  &php_arrow    &trans                  &kp LA(N)      &kp UNDER      &kp PLUS                &kp DOT               &kp BSLH               &trans
-                                                &kp TAB        &kp ENTER     &kp ESCAPE              &kp BACKSPACE  &none          &kp DEL
+&kp LS(LA(N8))  &kp EXCLAMATION    &kp AT_SIGN  &kp HASH       &kp DOLLAR    &kp PERCENT             &kp CARET  &kp AMPERSAND  &kp ASTERISK            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
+&kp LS(TILDE)   &kp GRAVE          &kp SQT      &kp LS(LBRC)   &kp LS(RBRC)  &kp LS(LA(NUMBER_2))    &kp PIPE   &kp MINUS      &hmr RIGHT_SHIFT EQUAL  &kp LBKT              &kp RBKT               &trans
+&trans          &kp LA(LS(SLASH))  &kp LA(N1)   &php_equalize  &php_arrow    &trans                  &kp LA(N)  &kp UNDER      &kp PLUS                &kp DOT               &kp BSLH               &trans
+                                                &kp TAB        &kp ESCAPE    &kp ENTER               &kp SPACE  &none          &kp DEL
             >;
         };
 
