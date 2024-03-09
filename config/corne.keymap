@@ -97,10 +97,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &none                         &none                         &kp SPACE                     &kp BACKSPACE                 &none     &none    &kp N7                &kp N8              &kp N9            &kp PLUS  &kp MINUS
-&trans  &trans                        &trans                        &trans                        &trans                        &none     &none    &hmr LEFT_CONTROL N4  &hmr LEFT_SHIFT N5  &hmr LEFT_GUI N6  &none     &trans
-&trans  &kp LS(LA(LC(LG(NUMBER_1))))  &kp LS(LA(LC(LG(NUMBER_2))))  &kp LS(LG(LC(LA(NUMBER_3))))  &kp LG(LS(LC(LA(NUMBER_4))))  &none     &none    &kp N1                &kp N2              &kp N3            &kp FSLH  &kp ASTERISK
-                                                                    &kp TAB                       &kp ESC                       &trans    &kp DOT  &kp N0                &kp COMMA
+&trans  &none   &none   &none                  &none                 &none     &none    &kp N7                &kp N8              &kp N9            &kp PLUS  &kp MINUS
+&trans  &trans  &trans  &hml LEFT_SHIFT SPACE  &hml LCTRL BACKSPACE  &none     &none    &hmr LEFT_CONTROL N4  &hmr LEFT_SHIFT N5  &hmr LEFT_GUI N6  &none     &trans
+&trans  &none   &none   &none                  &none                 &none     &none    &kp N1                &kp N2              &kp N3            &kp FSLH  &kp ASTERISK
+                        &kp TAB                &kp ESC               &trans    &kp DOT  &kp N0                &kp COMMA
             >;
         };
 
@@ -130,10 +130,10 @@
 
         shortcuts {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none               &none               &none               &none               &none
-&none  &none  &none  &none  &none  &none    &none  &kp LG(LA(LC(F1)))  &kp LA(LC(LG(F2)))  &kp LA(LG(LC(F3)))  &kp LG(LC(LA(F4)))  &none
-&none  &none  &none  &none  &none  &none    &none  &kp LA(LC(LG(F5)))  &kp LG(LA(LC(F6)))  &kp LG(LC(LA(F7)))  &kp LA(LC(LG(F8)))  &none
-                     &none  &none  &none    &none  &none               &none
+&none  &none                   &none                   &none                   &none                   &none    &none  &none               &none               &none               &none               &none
+&none  &kp LS(LA(LC(LG(N1))))  &kp LG(LA(LC(LS(N2))))  &kp LS(LA(LC(N3)))      &kp LG(LA(LS(LC(N4))))  &none    &none  &kp LG(LA(LC(F1)))  &kp LA(LC(LG(F2)))  &kp LA(LG(LC(F3)))  &kp LG(LC(LA(F4)))  &none
+&none  &kp LS(LA(LC(LG(N5))))  &kp LG(LA(LS(LC(N6))))  &kp LG(LA(LS(LC(N7))))  &kp LG(LA(LC(LS(N8))))  &none    &none  &kp LA(LC(LG(F5)))  &kp LG(LA(LC(F6)))  &kp LG(LC(LA(F7)))  &kp LA(LC(LG(F8)))  &none
+                                                       &none                   &none                   &none    &none  &none               &none
             >;
         };
 
