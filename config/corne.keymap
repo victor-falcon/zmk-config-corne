@@ -107,9 +107,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp F1            &kp F2            &kp F3              &kp F4         &kp C_PLAY_PAUSE     &none    &kp N7                &kp N8              &kp N9            &kp SPACE  &kp BSPC
-&trans  &hml LEFT_ALT F5  &hml LEFT_GUI F7  &hml LEFT_SHIFT F7  &hml LCTRL F8  &kp C_VOLUME_UP      &none    &hmr LEFT_CONTROL N4  &hmr LEFT_SHIFT N5  &hmr LEFT_GUI N6  &kp PLUS   &kp MINUS
-&trans  &kp F9            &kp F10           &kp F11             &kp F12        &kp C_VOLUME_DOWN    &none    &kp N1                &kp N2              &kp N3            &kp FSLH   &kp ASTERISK
+&trans  &kp F1            &kp F2            &kp F3              &kp F4         &kp C_PLAY_PAUSE     &none    &kp N7                &kp N8              &kp N9            &kp SPACE           &kp BSPC
+&trans  &hml LEFT_ALT F5  &hml LEFT_GUI F7  &hml LEFT_SHIFT F7  &hml LCTRL F8  &kp C_VOLUME_UP      &none    &hmr LEFT_CONTROL N4  &hmr LEFT_SHIFT N5  &hmr LEFT_GUI N6  &hmr LEFT_ALT PLUS  &kp MINUS
+&trans  &kp F9            &kp F10           &kp F11             &kp F12        &kp C_VOLUME_DOWN    &none    &kp N1                &kp N2              &kp N3            &kp FSLH            &kp ASTERISK
                                             &kp TAB             &kp ESC        &trans               &kp DOT  &kp N0                &kp COMMA
             >;
 
