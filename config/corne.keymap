@@ -99,7 +99,7 @@
 &kp TAB      &kp Q        &lt 4 W      &kp E              &kp R         &kp T              &kp Y            &kp U            &kp I          &lt 4 O      &kp P                     &kp BACKSPACE
 &kp ESCAPE   &hml LALT A  &hml LGUI S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G              &kp H            &hmr RCTRL J     &hmr RSHIFT K  &hmr LGUI L  &hmr RIGHT_ALT SEMICOLON  &sl 6
 &lt 5 GLOBE  &kp Z        &kp X        &kp C              &kp V         &kp B              &kp N            &kp M            &kp COMMA      &kp DOT      &kp FSLH                  &kp ENTER
-                                       &kp TAB            &lt 1 ESCAPE  &key_lt 2 ENTER    &key_lt 2 SPACE  &lt 3 BACKSPACE  &kp DEL
+                                       &kp TAB            &lt 1 ESCAPE  &key_lt 2 SPACE    &key_lt 2 SPACE  &lt 3 BACKSPACE  &kp DEL
             >;
 
             label = "falcon";
