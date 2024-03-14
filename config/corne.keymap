@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -164,10 +165,10 @@
 
         adjust {
             bindings = <
-&none  &rgb_ug RGB_TOG  &none            &none            &none            &sys_reset    &sys_reset  &none  &none  &none  &none  &none
-&none  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &none         &none       &none  &none  &none  &none  &none
-&none  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFR  &rgb_ug RGB_SPD  &none         &none       &none  &none  &none  &none  &none
-                                         &none            &none            &none         &none       &none  &none
+&none  &rgb_ug RGB_TOG  &none            &ext_power EP_ON  &ext_power EP_OFF  &sys_reset    &sys_reset  &none  &none  &none  &none  &none
+&none  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF   &rgb_ug RGB_SPI    &none         &none       &none  &none  &none  &none  &none
+&none  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFR   &rgb_ug RGB_SPD    &none         &none       &none  &none  &none  &none  &none
+                                         &none             &none              &none         &none       &none  &none
             >;
 
             label = "adjust";
