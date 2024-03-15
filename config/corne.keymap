@@ -176,10 +176,10 @@
 
         accents {
             bindings = <
-&none  &none          &none  &mac_adcent E  &none  &none    &none  &mac_adcent U  &mac_adcent I  &mac_adcent O  &none  &none
-&to 0  &mac_adcent A  &none  &none          &none  &none    &none  &none          &none          &none          &none  &none
-&none  &none          &none  &none          &none  &none    &none  &none          &none          &none          &none  &none
-                             &to 0          &to 0  &to 0    &to 0  &to 0          &to 0
+&trans  &trans         &trans  &mac_adcent E  &trans  &trans    &trans  &mac_adcent U  &mac_adcent I  &mac_adcent O  &trans  &trans
+&to 0   &mac_adcent A  &trans  &trans         &trans  &trans    &trans  &trans         &trans         &trans         &trans  &trans
+&trans  &trans         &trans  &trans         &trans  &trans    &trans  &trans         &trans         &trans         &trans  &trans
+                               &to 0          &to 0   &trans    &trans  &to 0          &to 0
             >;
 
             label = "accents";
