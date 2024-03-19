@@ -164,10 +164,10 @@
 
         shortcuts {
             bindings = <
-&none  &none                   &none                   &none                   &none                   &none    &none      &none               &none               &none               &none               &none
-&none  &kp LS(LA(LC(LG(N1))))  &kp LG(LA(LC(LS(N2))))  &kp LS(LA(LC(LG(N3))))  &kp LG(LA(LS(LC(N4))))  &none    &none      &kp LG(LA(LC(F1)))  &kp LA(LC(LG(F2)))  &kp LA(LG(LC(F3)))  &kp LG(LC(LA(F4)))  &none
-&none  &kp LS(LA(LC(LG(N5))))  &kp LG(LA(LS(LC(N6))))  &kp LG(LA(LS(LC(N7))))  &kp LG(LA(LC(LS(N8))))  &none    &none      &kp LA(LC(LG(F5)))  &kp LG(LA(LC(F6)))  &kp LG(LC(LA(F7)))  &kp LA(LC(LG(F8)))  &none
-                                                       &none                   &kp SPACE               &none    &kp SPACE  &none               &none
+&none  &none                   &none                   &none                   &none                   &none        &none      &none               &none               &none               &none               &none
+&none  &kp LS(LA(LC(LG(N1))))  &kp LG(LA(LC(LS(N2))))  &kp LS(LA(LC(LG(N3))))  &kp LG(LA(LS(LC(N4))))  &none        &none      &kp LG(LA(LC(F1)))  &kp LA(LC(LG(F2)))  &kp LA(LG(LC(F3)))  &kp LG(LC(LA(F4)))  &none
+&none  &kp LS(LA(LC(LG(N5))))  &kp LG(LA(LS(LC(N6))))  &kp LG(LA(LS(LC(N7))))  &kp LG(LA(LC(LS(N8))))  &none        &none      &kp LA(LC(LG(F5)))  &kp LG(LA(LC(F6)))  &kp LG(LC(LA(F7)))  &kp LA(LC(LG(F8)))  &none
+                                                       &none                   &none                   &kp SPACE    &kp SPACE  &none               &none
             >;
 
             label = "shortcuts";
