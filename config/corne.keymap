@@ -122,7 +122,7 @@
 &trans  &kp LG(Q)     &kp LG(W)     &kp LA(LG(LEFT))  &kp LA(LG(RIGHT))  &trans       &kp HOME      &kp PG_DN      &kp PG_UP  &kp END       &kp LG(PLUS)   &trans
 &trans  &kp LALT      &kp LGUI      &kp LSHFT         &kp LCTRL          &trans       &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT     &kp LG(N0)     &trans
 &trans  &kp LC(DOWN)  &kp LC(LEFT)  &kp LC(UP)        &kp LC(RIGHT)      &trans       &kp LG(LBKT)  &trans         &trans     &kp LG(RBKT)  &kp LG(MINUS)  &trans
-                                    &kp TAB           &trans             &kp ENTER    &kp SPACE     &kp BACKSPACE  &kp DEL
+                                    &kp TAB           &trans             &kp SPACE    &kp SPACE     &kp BACKSPACE  &kp DEL
             >;
 
             label = "arrows";
@@ -156,7 +156,7 @@
 &kp LS(LA(N8))  &kp EXCLAMATION    &kp AT_SIGN  &kp HASH       &kp DOLLAR    &kp PERCENT             &kp CARET  &kp AMPERSAND  &kp ASTERISK            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
 &kp TILDE       &kp GRAVE          &kp SQT      &kp LS(LBRC)   &kp LS(RBRC)  &kp LS(LA(NUMBER_2))    &kp PIPE   &kp MINUS      &hmr RIGHT_SHIFT EQUAL  &kp LBKT              &kp RBKT               &trans
 &trans          &kp LA(LS(SLASH))  &kp LA(N1)   &php_equalize  &php_arrow    &trans                  &n_tilde   &kp UNDER      &kp PLUS                &kp DOT               &kp BSLH               &trans
-                                                &kp TAB        &kp ESCAPE    &kp ENTER               &kp SPACE  &none          &kp DEL
+                                                &kp TAB        &kp ESCAPE    &kp SPACE               &kp SPACE  &none          &kp DEL
             >;
 
             label = "symbols";
