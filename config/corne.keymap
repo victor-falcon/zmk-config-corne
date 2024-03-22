@@ -126,8 +126,8 @@
 
         arrows {
             bindings = <
-&trans  &kp LG(Q)     &kp LG(W)     &kp LA(LG(LEFT))  &kp LA(LG(RIGHT))  &trans       &kp HOME      &kp PG_DN      &kp PG_UP  &kp END       &kp LG(PLUS)   &trans
-&trans  &kp LALT      &kp LGUI      &kp LSHFT         &kp LCTRL          &trans       &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT     &kp LG(N0)     &trans
+&trans  &kp LG(Q)     &kp LG(W)     &kp LA(LG(LEFT))  &kp LA(LG(RIGHT))  &trans       &kp HOME      &kp PG_DN      &kp PG_UP  &kp END       &kp LG(PLUS)   &kp BACKSPACE
+&trans  &kp LALT      &kp LGUI      &kp LSHFT         &kp LCTRL          &trans       &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT     &kp LG(N0)     &kp DELETE
 &trans  &kp LC(DOWN)  &kp LC(LEFT)  &kp LC(UP)        &kp LC(RIGHT)      &trans       &kp LG(LBKT)  &trans         &trans     &kp LG(RBKT)  &kp LG(MINUS)  &trans
                                     &kp TAB           &trans             &kp SPACE    &kp SPACE     &kp BACKSPACE  &kp DEL
             >;
@@ -144,7 +144,7 @@
 
             bindings = <
 &trans  &kp F1            &kp F2            &kp F3              &kp F4         &kp C_PLAY_PAUSE     &kp PLUS   &kp N7                &kp N8              &kp N9            &kp ASTERISK         &kp BACKSPACE
-&trans  &hml LEFT_ALT F5  &hml LEFT_GUI F6  &hml LEFT_SHIFT F7  &hml LCTRL F8  &kp C_VOLUME_UP      &kp MINUS  &hmr LEFT_CONTROL N4  &hmr LEFT_SHIFT N5  &hmr LEFT_GUI N6  &hmr LEFT_ALT SLASH  &none
+&trans  &hml LEFT_ALT F5  &hml LEFT_GUI F6  &hml LEFT_SHIFT F7  &hml LCTRL F8  &kp C_VOLUME_UP      &kp MINUS  &hmr LEFT_CONTROL N4  &hmr LEFT_SHIFT N5  &hmr LEFT_GUI N6  &hmr LEFT_ALT SLASH  &kp DELETE
 &trans  &kp F9            &kp F10           &kp F11             &kp F12        &kp C_VOLUME_DOWN    &none      &kp N1                &kp N2              &kp N3            &kp DOT              &none
                                             &kp TAB             &kp ESC        &trans               &kp SPACE  &kp N0                &kp COMMA
             >;
@@ -161,7 +161,7 @@
 
             bindings = <
 &kp LS(LA(N8))  &kp EXCLAMATION    &kp AT_SIGN  &kp HASH       &kp DOLLAR    &kp PERCENT             &kp CARET  &kp AMPERSAND  &kp ASTERISK            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
-&kp TILDE       &kp GRAVE          &kp SQT      &kp LS(LBRC)   &kp LS(RBRC)  &kp LS(LA(NUMBER_2))    &kp PIPE   &kp MINUS      &hmr RIGHT_SHIFT EQUAL  &kp LBKT              &kp RBKT               &trans
+&kp TILDE       &kp GRAVE          &kp SQT      &kp LS(LBRC)   &kp LS(RBRC)  &kp LS(LA(NUMBER_2))    &kp PIPE   &kp MINUS      &hmr RIGHT_SHIFT EQUAL  &kp LBKT              &kp RBKT               &kp DELETE
 &trans          &kp LA(LS(SLASH))  &kp LA(N1)   &php_equalize  &php_arrow    &trans                  &n_tilde   &kp UNDER      &kp PLUS                &kp DOT               &kp BSLH               &trans
                                                 &kp TAB        &kp ESCAPE    &kp SPACE               &kp SPACE  &none          &kp DEL
             >;
