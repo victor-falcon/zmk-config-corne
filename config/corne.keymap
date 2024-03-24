@@ -101,6 +101,15 @@
             label = "TD_B_P";
             #binding-cells = <0>;
             bindings = <&kp B>, <&kp P>;
+
+            tapping-term-ms = <300>;
+        };
+
+        esc_or_to_0: esc_or_to_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ESC_OR_TO_0";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE>, <&to 0>;
         };
     };
 
@@ -204,10 +213,10 @@
 
         gaming {
             bindings = <
-&kp ESC           &kp N1  &kp N2  &kp N3  &kp N4   &kp N5       &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB           &kp Q   &kp W   &kp E   &kp R    &kp T        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_CONTROL  &kp A   &kp S   &kp D   &kp F    &kp G        &trans  &trans  &trans  &trans  &trans  &trans
-                                  &to 0   &td_b_p  &kp SPACE    &trans  &trans  &trans
+&esc_or_to_0      &kp N1        &kp N2  &kp N3        &kp N4   &kp N5       &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB           &kp Q         &kp W   &kp E         &kp R    &kp T        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &kp NUMBER_6  &kp S   &kp D         &kp F    &kp H        &trans  &trans  &trans  &trans  &trans  &trans
+                                        &kp LEFT_ALT  &td_b_p  &kp SPACE    &trans  &trans  &trans
             >;
 
             label = "gaming";
