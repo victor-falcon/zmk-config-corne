@@ -111,6 +111,13 @@
             #binding-cells = <0>;
             bindings = <&kp ESCAPE>, <&to 0>;
         };
+
+        six_or_z: six_or_z {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SIX_OR_Z";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_6>, <&kp Z>;
+        };
     };
 
     keymap {
@@ -213,10 +220,10 @@
 
         gaming {
             bindings = <
-&esc_or_to_0      &kp N1        &kp N2  &kp N3        &kp N4   &kp N5       &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB           &kp Q         &kp W   &kp E         &kp R    &kp T        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_CONTROL  &kp NUMBER_6  &kp S   &kp D         &kp F    &kp H        &trans  &trans  &trans  &trans  &trans  &trans
-                                        &kp LEFT_ALT  &td_b_p  &kp SPACE    &trans  &trans  &trans
+&esc_or_to_0      &kp N1     &kp N2  &kp N3        &kp N4   &kp N5       &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB           &kp Q      &kp W   &kp E         &kp R    &kp T        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &six_or_z  &kp S   &kp D         &kp F    &kp H        &trans  &trans  &trans  &trans  &trans  &trans
+                                     &kp LEFT_ALT  &td_b_p  &kp SPACE    &trans  &trans  &trans
             >;
 
             label = "gaming";
