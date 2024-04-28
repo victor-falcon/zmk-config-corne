@@ -52,6 +52,13 @@
             bindings = <&kp LA(E) &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "MAC_ADCENT_A";
         };
+
+        gaming_enter: gaming_enter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &kp ENTER>;
+            label = "GAMING_ENTER";
+        };
     };
 
     behaviors {
@@ -223,7 +230,7 @@
             bindings = <
 &esc_or_to_0      &kp N1     &kp N2  &kp N3        &kp N4   &kp N5       &trans  &trans  &trans  &trans  &trans  &trans
 &kp TAB           &kp Q      &kp W   &kp E         &kp R    &kp T        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_CONTROL  &six_or_z  &kp S   &kp D         &kp F    &kp H        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &six_or_z  &kp S   &kp D         &kp F    &kp H        &trans  &trans  &trans  &trans  &trans  &gaming_enter
                                      &kp LEFT_ALT  &td_b_p  &kp SPACE    &trans  &trans  &trans
             >;
 
