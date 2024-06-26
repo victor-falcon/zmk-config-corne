@@ -61,6 +61,13 @@
             bindings = <&to 0 &kp ENTER>;
             label = "GAMING_ENTER";
         };
+
+        gaming_shift_enter: gaming_shift_enter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &kp LS(ENTER)>;
+            label = "GAMING_SHIFT_ENTER";
+        };
     };
 
     behaviors {
@@ -143,7 +150,7 @@
             bindings = <
 &kp TAB          &kp Q        &lt 4 W      &kp E              &kp R              &kp T              &kp Y            &kp U                 &kp I              &lt 4 O      &kp P                     &kp BACKSPACE
 &kp ESCAPE       &hml LALT A  &hml LGUI S  &hml LEFT_SHIFT D  &hml LCTRL F       &kp G              &kp H            &hmr RCTRL J          &hmr RSHIFT K      &hmr LGUI L  &hmr RIGHT_ALT SEMICOLON  &sl 6
-&lt 5 LA(LG(A))  &kp Z        &kp X        &kp C              &lt 8 V            &kp B              &kp N            &kp M                 &kp COMMA          &kp DOT      &kp FSLH                  &kp ENTER
+&lt 5 LA(LG(A))  &kp Z        &kp X        &kp C              &lt 9 V            &kp B              &kp N            &kp M                 &kp COMMA          &kp DOT      &kp FSLH                  &kp ENTER
                                            &hold_lt 2 TAB     &hold_lt 1 ESCAPE  &key_lt 2 SPACE    &key_lt 2 SPACE  &hold_lt 3 BACKSPACE  &hold_lt 2 DELETE
             >;
 
@@ -211,7 +218,7 @@
 &none  &rgb_ug RGB_TOG  &none            &ext_power EP_ON  &ext_power EP_OFF  &sys_reset    &sys_reset  &none         &none         &none         &bt BT_CLR    &none
 &none  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF   &rgb_ug RGB_SPI    &none         &none       &none         &none         &none         &none         &none
 &none  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFR   &rgb_ug RGB_SPD    &none         &none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
-                                         &none             &to 7              &none         &none       &none         &none
+                                         &to 8             &to 7              &none         &none       &none         &none
             >;
 
             label = "adjust";
@@ -228,15 +235,25 @@
             label = "accents";
         };
 
-        gaming {
+        lol_layer {
             bindings = <
 &esc_or_to_0      &kp N1     &kp N2  &kp N3        &kp N4   &kp N5       &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB           &kp Q      &kp W   &kp E         &kp R    &kp T        &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB           &kp Q      &kp W   &kp E         &kp R    &kp T        &trans  &trans  &trans  &trans  &trans  &gaming_shift_enter
 &kp LEFT_CONTROL  &six_or_z  &kp S   &kp D         &kp F    &kp H        &trans  &trans  &trans  &trans  &trans  &gaming_enter
                                      &kp LEFT_ALT  &td_b_p  &kp SPACE    &trans  &trans  &trans
             >;
 
+            label = "LOL layer";
+        };
+
+        gaming {
             label = "gaming";
+            bindings = <
+&esc_or_to_0      &kp Q  &kp W  &kp E         &kp R      &kp T        &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
+&kp TAB           &kp A  &kp S  &kp D         &kp F      &kp G        &kp H   &kp J   &kp K      &kp L    &kp SEMI  &gaming_shift_enter
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V      &kp B        &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &gaming_enter
+                                &kp LEFT_ALT  &kp LSHFT  &kp SPACE    &trans  &trans  &trans
+            >;
         };
 
         mouse {
