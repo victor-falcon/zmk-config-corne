@@ -15,6 +15,11 @@
 
 &lt { require-prior-idle-ms = <50>; };
 
+&mmv {
+    time-to-max-speed-ms = <200>;
+    acceleration-exponent = <2>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
