@@ -90,6 +90,7 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
             hold-trigger-on-release;
+            quick-tap-ms = <200>;
         };
 
         hmr: hmr {
@@ -101,6 +102,7 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
             hold-trigger-on-release;
+            quick-tap-ms = <200>;
         };
 
         key_lt: key_lt {
