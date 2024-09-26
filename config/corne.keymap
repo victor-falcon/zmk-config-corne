@@ -13,7 +13,10 @@
 
 #define U_MOUSE_MOVE_MAX 1750
 
-&lt { require-prior-idle-ms = <50>; };
+&lt {
+    require-prior-idle-ms = <50>;
+    quick-tap-ms = <200>;
+};
 
 &mmv {
     time-to-max-speed-ms = <200>;
