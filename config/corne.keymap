@@ -18,14 +18,16 @@
     quick-tap-ms = <200>;
 };
 
-&mmv {
-    time-to-max-speed-ms = <200>;
-    acceleration-exponent = <5>;
+&mmv { // Mouse Movement
+  acceleration-exponent = <1>;      // 1
+  time-to-max-speed-ms = <500>;     // 300
+  delay-ms = <0>;                   // 0
 };
 
-&mwh {
-    time-to-max-speed-ms = <200>;
-    acceleration-exponent = <2>;
+&mwh { // Mouse Scroll
+  acceleration-exponent = <1>;      // 0
+  time-to-max-speed-ms = <100>;     // 300
+  delay-ms = <0>;      
 };
 
 / {
