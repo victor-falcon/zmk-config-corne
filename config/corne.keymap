@@ -222,8 +222,8 @@
 
         shortcuts {
             bindings = <
-&none                   &kp LG(LA(LC(LS(Q))))  &kp LG(LA(LC(LS(W))))  &kp LS(LA(LC(LG(E))))         &kp LG(LC(LA(LS(R))))         &kp LG(LC(LA(LS(T))))    &kp LS(LG(LC(LA(Y))))  &kp LG(LC(LA(LS(A))))  &kp LG(LC(LA(LS(I))))  &kp LG(LC(LS(O)))      &kp LG(LC(LA(LS(P))))  &none
-&kp LG(LC(LA(LS(N8))))  &kp LG(LC(LA(LS(A))))  &kp LG(LA(LS(S)))      &kp LG(LC(LA(LS(D))))         &kp LG(LC(LA(LS(F))))         &kp LG(LC(LA(LS(G))))    &kp LC(LG(LA(LS(H))))  &kp LG(LC(LA(LS(J))))  &kp LG(LC(LA(LS(K))))  &kp LG(LC(LA(LS(L))))  &none                  &none
+&none                   &kp LG(LA(LC(LS(Q))))  &kp LG(LA(LC(LS(W))))  &kp LS(LA(LC(LG(E))))         &kp LG(LC(LA(LS(R))))         &kp LG(LC(LA(LS(T))))    &kp LS(LG(LC(LA(Y))))  &kp LG(LC(LA(LS(A))))  &kp LG(LC(LA(LS(I))))  &kp LG(LC(LS(LA(O))))  &kp LG(LC(LA(LS(P))))  &none
+&kp LG(LC(LA(LS(N8))))  &kp LG(LC(LA(LS(A))))  &kp LG(LA(LS(LC(S))))  &kp LG(LC(LA(LS(D))))         &kp LG(LC(LA(LS(F))))         &kp LG(LC(LA(LS(G))))    &kp LC(LG(LA(LS(H))))  &kp LG(LC(LA(LS(J))))  &kp LG(LC(LA(LS(K))))  &kp LG(LC(LA(LS(L))))  &none                  &none
 &none                   &kp LG(LC(LA(LS(Z))))  &kp LG(LC(LS(LA(X))))  &kp LG(LC(LA(LS(C))))         &kp LG(LC(LA(LS(V))))         &kp LG(LC(LA(LS(B))))    &kp LG(LC(LA(LS(N))))  &kp LC(LG(LA(LS(M))))  &none                  &none                  &none                  &none
                                                                       &kp LS(LA(LC(LG(NUMBER_3))))  &kp LS(LA(LC(LG(NUMBER_4))))  &kp SPACE                &kp SPACE              &none                  &none
             >;
