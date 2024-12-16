@@ -4,11 +4,13 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define U_MOUSE_MOVE_MAX 1000
@@ -17,6 +19,7 @@
 #undef MOVE_DOWN
 #undef MOVE_LEFT
 #undef MOVE_RIGHT
+
 #define MOVE_UP MOVE_VERT(-U_MOUSE_MOVE_MAX)
 #define MOVE_DOWN MOVE_VERT(U_MOUSE_MOVE_MAX)
 #define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
@@ -34,6 +37,7 @@
 #undef SCROLL_DOWN
 #undef SCROLL_LEFT
 #undef SCROLL_RIGHT
+
 #define SCROLL_UP SCROLL_VERT(U_MOUSE_SCROLL_MAX)
 #define SCROLL_DOWN SCROLL_VERT(-U_MOUSE_SCROLL_MAX)
 #define SCROLL_LEFT SCROLL_HOR(-U_MOUSE_SCROLL_MAX)
@@ -243,7 +247,7 @@
             bindings = <
 &none                   &kp LG(LA(LC(LS(Q))))  &kp LG(LA(LC(LS(W))))  &kp LS(LA(LC(LG(E))))         &kp LG(LC(LA(LS(R))))         &kp LG(LC(LA(LS(T))))    &kp LS(LG(LC(LA(Y))))  &kp LG(LC(LA(LS(A))))  &kp LG(LC(LA(LS(I))))  &kp LG(LC(LS(LA(O))))  &kp LG(LC(LA(LS(P))))  &none
 &kp LG(LC(LA(LS(N8))))  &kp LG(LC(LA(LS(A))))  &kp LG(LA(LS(LC(S))))  &kp LG(LC(LA(LS(D))))         &kp LG(LC(LA(LS(F))))         &kp LG(LC(LA(LS(G))))    &kp LC(LG(LA(LS(H))))  &kp LG(LC(LA(LS(J))))  &kp LG(LC(LA(LS(K))))  &kp LG(LC(LA(LS(L))))  &none                  &none
-&none                   &kp LG(LC(LA(LS(Z))))  &kp LG(LC(LS(LA(X))))  &kp LG(LC(LA(LS(C))))         &kp LG(LC(LA(LS(V))))         &kp LG(LC(LA(LS(B))))    &kp LG(LC(LA(LS(N))))  &kp LC(LG(LA(LS(M))))  &none                  &none                  &none                  &none
+&kp LS(LA(LC(LG(N7))))  &kp LG(LC(LA(LS(Z))))  &kp LG(LC(LS(LA(X))))  &kp LG(LC(LA(LS(C))))         &kp LG(LC(LA(LS(V))))         &kp LG(LC(LA(LS(B))))    &kp LG(LC(LA(LS(N))))  &kp LC(LG(LA(LS(M))))  &none                  &none                  &none                  &none
                                                                       &kp LS(LA(LC(LG(NUMBER_3))))  &kp LS(LA(LC(LG(NUMBER_4))))  &kp SPACE                &kp SPACE              &none                  &none
             >;
 
