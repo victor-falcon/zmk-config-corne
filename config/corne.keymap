@@ -49,10 +49,10 @@
 
 &lt {
     flavor = "balanced";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <175>;
     require-prior-idle-ms = <150>;
-    retro-tap;
+    tapping-term-ms = <250>;
+    quick-tap-ms = <175>;
+    hold-trigger-on-release;
 };
 
 / {
