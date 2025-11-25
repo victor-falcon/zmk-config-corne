@@ -48,11 +48,10 @@
 };
 
 &lt {
-    flavor = "balanced";
-    require-prior-idle-ms = <150>;
-    tapping-term-ms = <250>;
-    quick-tap-ms = <175>;
-    hold-trigger-on-release;
+    require-prior-idle-ms = <200>;
+    quick-tap-ms = <200>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <150>;
 };
 
 / {
